@@ -3,6 +3,8 @@
 
 <head>
     <meta charset="UTF-8" />
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@300;400;600;700&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@300;400;600;700&amp;display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet" />
@@ -11,7 +13,8 @@
         /* color palette from https://www.color-hex.com/color-palettes */
         
          :root {
-            --darkest-color: #064273;
+            --darkest-color-1: #064273;
+            --darkest-color-2: #000000;
             --lightest-color: #def3f6;
             --highlight-color: #ffffff;
             --bright-color-1: #1da2d8;
@@ -20,9 +23,9 @@
         }
         
         body {
-            background: var(--darkest-color);
+            background: var(--darkest-color-1);
             color: var(--lightest-color);
-            font-family: 'Roboto', sans-serif;
+            font-family: 'Roboto', antialiased, sans-serif;
         }
         
         .container {
@@ -70,11 +73,12 @@
             /* border: 1px solid var(--lightest-color); */
             box-sizing: border-box;
             margin: 20px auto;
-            color: var(--darkest-color);
-            padding: 15px;
+            color: var(--darkest-color-2);
+            padding: 20px;
             text-align: center;
             transition: all 0.15s;
-            border-radius: 20px;
+            border-radius: 25px;
+            transition: box-shadow 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99) 0s, border-color 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99) 0s, transform 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99) 0s, background-color 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99) 0s;
         }
         
         .link-list-item:hover,
@@ -82,6 +86,7 @@
             color: var(--highlight-color);
             border-color: var(--highlight-color);
             text-shadow: 0 0 2em var(--highlight-color);
+            background-color: rgba(var(--highlight-color) 0.6);
         }
         
         .icon-list-img {
@@ -152,7 +157,8 @@
             overflow: hidden;
         }
     </style>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-177429414-1"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-180443122-1"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
 
@@ -161,8 +167,10 @@
         }
         gtag('js', new Date());
 
-        gtag('config', 'UA-177429414-1');
+        gtag('config', 'UA-180443122-1');
     </script>
+
+
 </head>
 
 <body>
